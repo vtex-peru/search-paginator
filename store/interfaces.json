@@ -1,0 +1,8 @@
+{
+  "uploadFile":{
+      "component": "UploadForm"
+    },
+  "pagination":{
+    "component": "Pagination"
+  }
+}

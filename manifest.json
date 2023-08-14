@@ -1,0 +1,37 @@
+{
+  "vendor": "marcoherrada",
+  "name": "store-components",
+  "version": "3.169.3",
+  "title": "VTEX Store Components",
+  "defaultLocale": "es-PE",
+  "description": "The VTEX store components for that render apps can use",
+  "builders": {
+    "react": "3.x",
+    "store": "0.x",
+    "docs": "0.x"
+  },
+  "mustUpdateAt": "2019-04-02",
+  "dependencies": {
+    "vtex.store-components": "3.x",
+    "vtex.address-form": "4.x",
+    "vtex.styleguide": "9.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.css-handles": "0.x",
+    "vtex.native-types": "0.x",
+    "vtex.file-manager": "0.x",
+    "vtex.file-manager-graphql": "0.x",
+    "vtex.search-page-context": "0.x"
+  },
+  "settingsSchema": {
+    "title": "marcoherrada.store-components",
+    "type": "object",
+    "properties": {
+      "enableDefaultSeller": {
+        "title": "Use Default Seller",
+        "description": "Should use default seller to get price",
+        "type": "boolean"
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

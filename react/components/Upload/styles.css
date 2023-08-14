@@ -1,0 +1,369 @@
+.containerForm {
+    /*     display: flex; */
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    /* border-radius: 12px; */
+    overflow: hidden;
+}
+
+.selectForm {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    padding: 7px 10px;
+    border-radius: 12px;
+    border: 2px solid #e6e6e6;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('https://coolboxpe.vtexassets.com/arquivos/arrow23.svg');
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: 1.4em auto, 100%;
+}
+
+.selectForm::-ms-expand {
+    display: none;
+}
+
+.selectForm:hover {
+    border-color: #888;
+}
+
+.errorText {
+    color: #FF2442;
+    transform: translateY(-17px);
+    visibility: hidden;
+    cursor: default;
+    transition: .3s ease all;
+    font-size: 0.8rem;
+    z-index: -1;
+    margin-bottom: 16px;
+}
+
+.poup {
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    height: 44%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* top: 50%; */
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    opacity: 0;
+    font-size: 1.5rem;
+    background: #fbfbfb;
+    transition: .6s ease-in-out all;
+    text-align: center;
+}
+
+.thanks {
+    margin: 0;
+    color: #E52531;
+    font-weight: 600;
+}
+
+.iconFiesta {
+    transform: translateY(-18px);
+}
+
+.earlyDesktop {
+    margin: 0;
+    font-weight: 500;
+}
+
+.earlyMobile {
+    display: none;
+    font-weight: 500;
+    margin: 5px 0 0 0;
+}
+
+.promotion {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.closeP {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px 20px;
+    transform: translate(50%, -50%);
+    background: #333;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 11px 6px 21px -9px rgb(0 0 0);
+}
+
+.errorText {
+    font-size: 10px;
+}
+
+.containerSubmit input[type=submit] {
+    padding: 8px 30px;
+}
+
+/* @media screen and (max-width:1370px) {
+    .FormMarketing {
+        padding: 14px 10px;
+        margin: 10px; 
+         font-size: 11px;
+         border-radius: 8px;
+    }
+} */
+
+
+@media screen and (max-width:800px) {
+    .earlyDesktop {
+        display: none;
+    }
+
+    .earlyMobile {
+        display: initial;
+    }
+
+    .promotion {
+        margin-top: 5px;
+    }
+
+    .containerOpc {
+        position: relative;
+    }
+
+    .containerCheckbox label,
+    .terminos label,
+    .datas label {
+        margin-left: 6px;
+    }
+
+    .containerInputs {
+        flex-direction: column;
+        gap: initial;
+    }
+
+    /* 
+    .inputBx {
+        width: 100%;
+    } */
+
+
+}
+
+@media screen and (max-width: 640px) {
+    .FormSolicredi {
+        padding: 6px;
+    }
+
+    .inputForm {
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+
+    }
+
+    .inputFile {
+        border-top: 1px solid #e6e6e6;
+        display: inline !important;
+        padding: 14px 0;
+    }
+
+    .inputFile label {
+        margin: 0 0 10px 0;
+    }
+
+    .containerInputs {
+        display: flex;
+        width: 100%;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .containerInputsFile {
+        width: 100%;
+        gap: 10px;
+        display: flex;
+    }
+}
+
+
+
+/* FOMULARIO JOHANNES */
+.FormSolicredi {
+    width: 100%;
+    font-size: 14px;
+}
+
+.containerForm {
+    width: 100%;
+}
+
+.containerInputs {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+
+}
+
+.containerInputs .inputForm {
+    flex-grow: 1;
+}
+
+.inputForm {
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+}
+
+.inputForm input[type=text] {
+    outline: none;
+    border-radius: 12px;
+    padding: 7px 10px;
+    border: 1px solid #e6e6e6;
+}
+
+.labelText {
+    font-weight: 400;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+.selectForm {
+    padding: 7px 10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+}
+
+.inputFile {
+    border-top: 1px solid #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    align-items: center;
+    margin-top: 16px
+}
+
+.containerInputsFile {
+    width: 100%;
+    gap: 10px;
+}
+
+.buttonFile input[type="file"] {
+    appearance: none;
+    display: none;
+    visibility: hidden;
+
+    opacity: 0;
+    z-index: -1;
+
+}
+
+.buttonFile {
+    background-color: #252221;
+    color: #fff;
+    position: relative;
+    border-radius: 5px;
+    padding: 8px 10px;
+    min-width: 190px;
+    overflow: hidden;
+    border: 0;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 6px;
+    justify-content: center;
+
+    margin-top: 10px;
+}
+
+/* probando */
+.butonTest input[type="file"] {
+    display: none;
+}
+
+.labelTest {
+    display: inline-block;
+    padding: 15px 40px;
+    background: #1ce44b;
+
+}
+
+/* FUIN */
+.containerTextFile {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerSubmit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.containerSubmit input[type=submit] {
+    padding: 10px 60px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background: #E30521;
+    color: white;
+    font-size: 15px;
+    transition: .2s ease-in-out;
+}
+
+.containerSubmit input[type=submit]:hover {
+    background: #d30f1c;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .12);
+}
+
+.downloadRequest {
+    color: #175DC2;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+}
+
+.reminderMessage {
+    color: #707070;
+    font-size: 12px;
+}
+
+.formSubtitle {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+
+}
+
+.listForm {
+    padding: 5px 0;
+}
+
+.listFormDonw {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.ulform {
+    margin: 0;
+}
+
+.stepTwo {
+    color: #000;
+    font-size: 12px;
+}

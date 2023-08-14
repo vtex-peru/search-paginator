@@ -1,0 +1,11 @@
+export const PAGINATION_TYPE = {
+  SHOW_MORE: 'show-more',
+  INFINITE_SCROLL: 'infinite-scroll',
+  PAGINATION: 'pagination'
+}
+
+export const PAGINATION_TYPES = [
+  PAGINATION_TYPE.SHOW_MORE,
+  PAGINATION_TYPE.INFINITE_SCROLL,
+  PAGINATION_TYPE.PAGINATION,
+]

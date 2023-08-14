@@ -1,0 +1,15 @@
+mutation uploadAttachment(
+  $acronym: String!
+  $documentId: String!
+  $field: String!
+  $file: Upload!
+) {
+  uploadAttachment(
+    acronym: $acronym,
+    documentId: $documentId,
+    field: $field,
+    file: $file) {
+    filename
+    mimetype
+  }
+}
